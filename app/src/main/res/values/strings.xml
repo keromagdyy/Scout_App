@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Scout App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="church">
+        كنيسة \nالسيدة العذراء والانبا انطونيوس والانبا بولا \nبشبرا الخيمة
+    </string>
+
+    <string name="powered_by">
+        Kerolos Magdy \&amp; Marvel Badie
+    </string>
+
+
 </resources>
