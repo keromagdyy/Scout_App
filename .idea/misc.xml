@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/drawable/ic_back.xml" value="0.138" />
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/drawable/team_style.xml" value="0.138" />
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/drawable/txt_style.xml" value="0.138" />
         <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/activity_main.xml" value="0.15" />
-        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/fragment_details.xml" value="0.23423423423423423" />
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/fragment_home.xml" value="0.1902439024390244" />
         <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/layout/members_item.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Atya/AndroidStudioProjects/ScoutApp/app/src/main/res/mipmap-anydpi-v26/app_icon.xml" value="0.138" />
       </map>
     </option>

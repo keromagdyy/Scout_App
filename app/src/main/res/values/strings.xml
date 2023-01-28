@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="church">
+    <string name="the_church">
         كنيسة \nالسيدة العذراء والانبا انطونيوس والانبا بولا \nبشبرا الخيمة
     </string>
 
@@ -12,5 +12,46 @@
         Kerolos Magdy \&amp; Marvel Badie
     </string>
 
+    <string name="name" >الأسم</string>
+    <string name="team_name" >أسم الفريق</string>
+    <string name="stage" >المرحلة</string>
+    <string name="address" >العنوان</string>
+    <string name="phone_number" >رقم التليفون</string>
+    <string name="birth_date" >تاريخ الميلاد</string>
+    <string name="father" >أب الاعتراف</string>
+    <string name="entering_date" >تاريخ الالتحاق</string>
+    <string name="rank" >الرتبة</string>
+    <string name="hobby" >الهواية</string>
+    <string name="promise_date" >تاريخ الوعد</string>
+    <string name="church" >الكنيسة</string>
+    <string name="update">Update</string>
+
+    <string-array name="team_spinner">
+        <item>كل الفرق</item>
+        <item>فريق مينى</item>
+        <item>فريق براعم</item>
+        <item>فريق أشبال</item>
+        <item>فريق زهرات</item>
+        <item>فريق كشاف</item>
+        <item>فريق مرشدات</item>
+        <item>فريق متقدم</item>
+        <item>فريق رائدات</item>
+        <item>فريق مرشح</item>
+        <item>فريق جوالة</item>
+    </string-array>
+
+    <string-array name="team_name">
+        <item>أسم الفريق</item>
+        <item>فريق مينى</item>
+        <item>فريق براعم</item>
+        <item>فريق أشبال</item>
+        <item>فريق زهرات</item>
+        <item>فريق كشاف</item>
+        <item>فريق مرشدات</item>
+        <item>فريق متقدم</item>
+        <item>فريق رائدات</item>
+        <item>فريق مرشح</item>
+        <item>فريق جوالة</item>
+    </string-array>
 
 </resources>

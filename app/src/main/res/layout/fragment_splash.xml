@@ -22,7 +22,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="@string/church"
+            android:text="@string/the_church"
             android:textColor="@color/navy_blue"
             android:textSize="16dp"
             android:textStyle="bold"
