@@ -115,12 +115,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 app:backgroundTint="@color/white"
+                android:foregroundGravity="right"
+                android:layout_gravity="right"
+                android:gravity="right"
                 android:background="@drawable/txt_style"
                 app:elevation="20dp"
                 android:textColor="@color/black"
                 android:text="@string/birth_date"
                 android:inputType="textPersonName"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                />
             </androidx.cardview.widget.CardView>
             <EditText
                 android:id="@+id/txt_father"
@@ -150,6 +154,9 @@
                 android:layout_height="60dp"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/white"
+                android:foregroundGravity="right"
+                android:layout_gravity="right"
+                android:gravity="right"
                 android:background="@drawable/txt_style"
                 android:text="@string/entering_date"
                 android:textSize="14sp" />
@@ -199,6 +206,9 @@
                 android:layout_height="60dp"
                 app:backgroundTint="@color/white"
                 android:textColor="@color/black"
+                android:foregroundGravity="right"
+                android:layout_gravity="right"
+                android:gravity="right"
                 android:background="@drawable/txt_style"
                 app:elevation="20dp"
                 android:text="@string/promise_date"

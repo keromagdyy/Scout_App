@@ -44,14 +44,15 @@ public class HomeFragment extends Fragment {
         database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                members.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     MembersModel model = snapshot.getValue(MembersModel.class);
                     members.add(model);
                 }
+
                 adapter = new MembersAdapter(HomeFragment.this,members);
                 binding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                 binding.recyclerView.setAdapter(adapter);
-                Toast.makeText(getContext(), "on Data Change", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -69,29 +70,6 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(getView()).navigate(R.id.detailsFragment, null, navBuilder.build());
             }
         });
-
-
-
-//        ArrayList<MembersModel> members = new ArrayList<>();
-//        members.add(new MembersModel("كيرلس طارق","عريف أول","فريق متقدم"));
-//        members.add(new MembersModel("كيرلس مجدى","مساعد عريف","فريق كشاف"));
-//        members.add(new MembersModel("مينا جبرائيل","عريف ثانى","فريق كشاف"));
-//        members.add(new MembersModel("اندرو عادل","فرد","فريق متقدم"));
-//        members.add(new MembersModel("مارينا كمال","عريف أول","فريق زهرات"));
-//        members.add(new MembersModel("يوستينا نشأت","عريف ثانى","فريق مرشدات"));
-//        members.add(new MembersModel("مريم مراد","فرد","فريق زهرات"));
-//        members.add(new MembersModel("استير ابراهيم","مساعد","فريق زهرات"));
-//        members.add(new MembersModel("كاراس اسامة","عريف أول","فريق أشبال"));
-//        members.add(new MembersModel("بولا حنا","فرد","فريق أشبال"));
-//        members.add(new MembersModel("بيتر بديع","فرد","فريق كشاف"));
-//        members.add(new MembersModel("اسحق شنودة","فرد","فريق متقدم"));
-//        members.add(new MembersModel("ماريا شنودة","عريف أول","فريق رائدات"));
-//        members.add(new MembersModel("مريم مختار","فرد","فريق رائدات"));
-//
-//        adapter = new MembersAdapter(this, members);
-//
-//        binding.recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity(),LinearLayoutManager.VERTICAL,false));
-//        binding.recyclerView.setAdapter(adapter);
 
         binding.spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -126,26 +104,6 @@ public class HomeFragment extends Fragment {
 
 
         return binding.getRoot();
-    }
-
-    ArrayList<MembersModel> getData(){
-        ArrayList<MembersModel> members = new ArrayList<>();
-        members.add(new MembersModel("كيرلس طارق","عريف أول","فريق متقدم"));
-        members.add(new MembersModel("كيرلس مجدى","مساعد عريف","فريق كشاف"));
-        members.add(new MembersModel("مينا جبرائيل","عريف ثانى","فريق كشاف"));
-        members.add(new MembersModel("اندرو عادل","فرد","فريق متقدم"));
-        members.add(new MembersModel("مارينا كمال","عريف أول","فريق زهرات"));
-        members.add(new MembersModel("يوستينا نشأت","عريف ثانى","فريق مرشدات"));
-        members.add(new MembersModel("مريم مراد","فرد","فريق زهرات"));
-        members.add(new MembersModel("استير ابراهيم","مساعد","فريق زهرات"));
-        members.add(new MembersModel("كاراس اسامة","عريف أول","فريق أشبال"));
-        members.add(new MembersModel("بولا حنا","فرد","فريق أشبال"));
-        members.add(new MembersModel("بيتر بديع","فرد","فريق كشاف"));
-        members.add(new MembersModel("اسحق شنودة","فرد","فريق متقدم"));
-        members.add(new MembersModel("ماريا شنودة","عريف أول","فريق رائدات"));
-        members.add(new MembersModel("مريم مختار","فرد","فريق رائدات"));
-
-        return members;
     }
 
 }
