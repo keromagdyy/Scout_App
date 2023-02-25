@@ -3,6 +3,8 @@ package com.scoutapp.kmagdy;
 public class MembersModel {
     String name,rank,teamName, stage, address, phoneNumber, father, hobby, church;
 
+    public MembersModel() {
+    }
 
     public MembersModel(String name, String rank, String teamName, String stage, String address, String phoneNumber, String father, String hobby, String church) {
         this.name = name;

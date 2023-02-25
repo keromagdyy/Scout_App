@@ -48,9 +48,10 @@ public class HomeFragment extends Fragment {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     MembersModel model = snapshot.getValue(MembersModel.class);
                     members.add(model);
+
                 }
 
-                adapter = new MembersAdapter(HomeFragment.this,members);
+                adapter = new MembersAdapter(HomeFragment.this, members);
                 binding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                 binding.recyclerView.setAdapter(adapter);
             }
@@ -74,20 +75,20 @@ public class HomeFragment extends Fragment {
         binding.spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                ArrayList<MembersModel> membersModels =  new ArrayList<>();
+                ArrayList<MembersModel> membersModels = new ArrayList<>();
 
                 if (adapterView.getSelectedItem().equals("كل الفرق")) {
                     membersModels.addAll(members);
                 }
 
-                for (int j = 0 ; j < members.size() ; j++) {
-                    if (members.get(j).teamName.equals(adapterView.getSelectedItem())){
+                for (int j = 0; j < members.size(); j++) {
+                    if (members.get(j).teamName.equals(adapterView.getSelectedItem())) {
                         membersModels.add(members.get(j));
                     }
                 }
                 adapter = new MembersAdapter(HomeFragment.this, membersModels);
 
-                binding.recyclerView.setLayoutManager(new LinearLayoutManager(HomeFragment.this.getActivity(),LinearLayoutManager.VERTICAL,false));
+                binding.recyclerView.setLayoutManager(new LinearLayoutManager(HomeFragment.this.getActivity(), LinearLayoutManager.VERTICAL, false));
                 binding.recyclerView.setAdapter(adapter);
 
             }
@@ -96,7 +97,7 @@ public class HomeFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> adapterView) {
                 adapter = new MembersAdapter(HomeFragment.this, members);
 
-                binding.recyclerView.setLayoutManager(new LinearLayoutManager(HomeFragment.this.getActivity(),LinearLayoutManager.VERTICAL,false));
+                binding.recyclerView.setLayoutManager(new LinearLayoutManager(HomeFragment.this.getActivity(), LinearLayoutManager.VERTICAL, false));
                 binding.recyclerView.setAdapter(adapter);
 
             }
