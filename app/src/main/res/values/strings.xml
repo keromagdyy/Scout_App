@@ -25,6 +25,7 @@
     <string name="promise_date" >تاريخ الوعد</string>
     <string name="church" >الكنيسة</string>
     <string name="update">Update</string>
+    <string name="add">Add</string>
 
     <string-array name="team_spinner">
         <item>كل الفرق</item>

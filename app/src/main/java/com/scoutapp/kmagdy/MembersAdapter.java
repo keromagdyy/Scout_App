@@ -53,13 +53,16 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.Holder> 
             binding.txtName.setText(member.getName());
             binding.txtTeamName.setText(member.getTeamName());
             binding.txtRank.setText(member.getRank());
-            Bundle bundle = new Bundle();
             NavOptions.Builder navBuilder = new NavOptions.Builder();
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Navigation.findNavController(itemView).navigate(R.id.detailsFragment, null, navBuilder.build());
+                    Bundle bundle = new Bundle();
+                    bundle.putString("name", member.getName());
+                    bundle.putString("rank", member.getRank());
+                    bundle.putString("team_name", member.getTeamName());
+                    Navigation.findNavController(itemView).navigate(R.id.detailsFragment, bundle, navBuilder.build());
                 }
             });
         }

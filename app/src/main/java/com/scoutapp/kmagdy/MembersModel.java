@@ -1,12 +1,14 @@
 package com.scoutapp.kmagdy;
 
+import java.util.Locale;
+
 public class MembersModel {
-    String name,rank,teamName, stage, address, phoneNumber, father, hobby, church;
+    private String name,rank,teamName, stage, address, phoneNumber, father, hobby, church ,birthdate ,dateEntering ,promiseDate;
 
     public MembersModel() {
     }
 
-    public MembersModel(String name, String rank, String teamName, String stage, String address, String phoneNumber, String father, String hobby, String church) {
+    public MembersModel(String name, String rank, String teamName, String stage, String address, String phoneNumber, String father, String hobby, String church , String birthdate , String dateEntering , String promiseDate ) {
         this.name = name;
         this.rank = rank;
         this.teamName = teamName;
@@ -16,6 +18,9 @@ public class MembersModel {
         this.father = father;
         this.hobby = hobby;
         this.church = church;
+        this.birthdate = birthdate;
+        this.dateEntering = dateEntering;
+        this.promiseDate = promiseDate;
     }
 
     public String getName() {
@@ -88,5 +93,17 @@ public class MembersModel {
 
     public void setChurch(String church) {
         this.church = church;
+    }
+
+    public String getBirthdate() {
+        return birthdate;
+    }
+
+    public String getDateEntering() {
+        return dateEntering;
+    }
+
+    public String getPromiseDate() {
+        return promiseDate;
     }
 }

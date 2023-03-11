@@ -82,7 +82,7 @@ public class HomeFragment extends Fragment {
                 }
 
                 for (int j = 0; j < members.size(); j++) {
-                    if (members.get(j).teamName.equals(adapterView.getSelectedItem())) {
+                    if (members.get(j).getTeamName().equals(adapterView.getSelectedItem())) {
                         membersModels.add(members.get(j));
                     }
                 }

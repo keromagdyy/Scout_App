@@ -55,7 +55,6 @@
                 android:elevation="20dp"
                 android:ems="10"
                 android:text="@string/team_name"
-                android:entries="@array/team_name"
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 android:textSize="14sp" />
@@ -246,7 +245,7 @@
                 app:backgroundTint="@color/royal_blue"
                 android:background="@drawable/txt_style"
                 android:textColor="@color/white"
-                android:text="@string/update"
+                android:text="@string/add"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 />
